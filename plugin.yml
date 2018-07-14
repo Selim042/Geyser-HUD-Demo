@@ -1,0 +1,4 @@
+name: GeyserHUDDemo
+main: selim.geyser.hud.demo.GeyserHUDDemo
+depend: [GeyserHUD]
+version: 1.0.0
