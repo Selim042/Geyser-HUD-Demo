@@ -48,9 +48,9 @@ public class GeyserHUDDemo extends JavaPlugin implements Listener, IGeyserPlugin
 				IGeyserHUD hud = GeyserHUDSpigot.getHud(event.getPlayer());
 				if (hud != null) {
 					StringHUDPart stringPart = hud
-							.addPart(new StringHUDPartSpigot("Balance: $10", 0, 0, color));
-					IHUDPart rectangle = hud.addPart(new RectangleHUDPart(0, 0, 50, 50, 0xFFFFFF));
-					hud.addPart(new ItemStackHUDPartSpigot(new ItemStack(Material.COMPASS), 0, 16));
+							.addPart(new StringHUDPartSpigot("Balance: $10", 0, 0, color, 10));
+					IHUDPart rectangle = hud.addPart(new RectangleHUDPart(0, 0, 50, 50, 0xFFFFFF, 5));
+					hud.addPart(new ItemStackHUDPartSpigot(new ItemStack(Material.COMPASS), 0, 16, 2));
 					Bukkit.getScheduler().scheduleSyncDelayedTask(t, new Runnable() {
 
 						@Override
